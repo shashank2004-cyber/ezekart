@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Ezekart</title>
-<link rel="stylesheet" href="style.css">
-<a href="login.Loginhtml"> class="login-btn"></a>
-</head>
+<header style="display:flex;justify-content:space-between;align-items:center;background:#0b2c5f;color:white;padding:15px;">
+  <h1>Ezekart</h1>
 
+  <div>
+    <a href="login.html" style="color:white;text-decoration:none;font-weight:bold;">
+      Login
+    </a>
+  </div>
+</header>
 <body>
 
 <nav class="navbar">
@@ -25,6 +28,7 @@
     <div onclick="searchCategory('meat')">Meat</div>
     <div onclick="searchCategory('vegetables')">Vegetables</div>
     <div onclick="searchCategory('electronics')">Electronics</div>
+     <div onclick="searchCategory('jewellary')">jewllary</div>
 </section>
 
 <section id="products"></section>
