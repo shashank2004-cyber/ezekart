@@ -3,7 +3,7 @@ async function register(){
 let u=document.getElementById("username").value;
 let p=document.getElementById("password").value;
 
-let res=await fetch("http://127.0.0.1:5000/register",{
+let res=await fetch("https://ezekart-backend.onrender.com/login",{
 method:"POST",
 headers:{"Content-Type":"application/json"},
 body:JSON.stringify({username:u,password:p})
@@ -18,7 +18,7 @@ async function login(){
 let u=document.getElementById("username").value;
 let p=document.getElementById("password").value;
 
-let res=await fetch("http://127.0.0.1:5000/login",{
+let res=await fetch("https://ezekart-backend.onrender.com/login",{
 method:"POST",
 headers:{"Content-Type":"application/json"},
 body:JSON.stringify({username:u,password:p})
