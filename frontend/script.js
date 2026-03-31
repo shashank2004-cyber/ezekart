@@ -2,7 +2,7 @@ async function searchProduct(){
 
 let query=document.getElementById("search").value;
 
-let res=await fetch(`https://ezekart-backend.onrender.com/products")search?q=${query}`);
+let res=await fetch(`https://ezekart-backend.onrender.com/products search?q=${query}`);
 let data=await res.json();
 
 showProducts(data);
